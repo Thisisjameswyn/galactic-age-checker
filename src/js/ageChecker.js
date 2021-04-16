@@ -6,13 +6,7 @@ export default class AgeTraveller {
   }
   returnAge(destination) {
     this.traveledAge = this.age;
-    if(destination === "Mars") {
-      this.traveledAge = Math.trunc(this.traveledAge/1.88);
-    } else if (destination === "Mercury") {
-      this.traveledAge = Math.trunc(this.traveledAge/0.24);
-    } else if (destination === "Venus") {
-      this.traveledAge = Math.trunc(this.traveledAge/0.62);
-    }
+    this.traveledAge = Math.trunc(this.traveledAge/destination[1])
   }
 }
 

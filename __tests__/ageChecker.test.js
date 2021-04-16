@@ -28,30 +28,16 @@ describe("AgeTraveller",() => {
 
 describe("AgeTraveller.returnAge", () => {
   const testAge = 50;
+  const compAge = 26;
+  const destinationArray = ["Mars", 1.88]
   let ageTester;
   
   beforeEach(() => {
     ageTester = new AgeTraveller(testAge);
   });
 
-  test("returnAge should return a modified number to travelAge for Mars", () => {
-    const passedValue = "Mars";
-    const compAge = 26;
-    ageTester.returnAge(passedValue);
-    expect(ageTester.traveledAge).toEqual(compAge);
-  })
-
-  test("returnAge should return a modified number to travelAge for Mercury", () => {
-    const passedValue = "Mercury";
-    const compAge = 208;
-    ageTester.returnAge(passedValue);
-    expect(ageTester.traveledAge).toEqual(compAge);
-  })
-
-  test("returnAge should return a modified number to travelAge for Venus", () => {
-    const passedValue = "Venus";
-    const compAge = 80;
-    ageTester.returnAge(passedValue);
+  test("returnAge should modify traveledAge based on destination values", () => {
+    ageTester.returnAge(destinationArray)
     expect(ageTester.traveledAge).toEqual(compAge);
   })
 })
