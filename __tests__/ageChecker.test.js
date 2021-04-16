@@ -1,6 +1,6 @@
 import AgeTraveller from "../src/js/ageChecker";
 
-describe(AgeTraveller,() => {
+describe("AgeTraveller",() => {
 
   const testAge = 50;
   let ageTester;
@@ -14,14 +14,30 @@ describe(AgeTraveller,() => {
   })
 
   test("AgeTraveller should store an entered age value", () => {
-    expect(ageTester.age).toEqual(testAge)
+    expect(ageTester.age).toEqual(testAge);
   })
 
   test("AgeTraveller should store an average age value", () => {
-    expect(ageTester.averageAge).toEqual(80)
+    expect(ageTester.averageAge).toEqual(80);
   })
 
   test("AgeTraveller should store a return value for traveledAge", () => {
     expect(ageTester.traveledAge).toBeDefined();
   })
 });
+
+describe("AgeTraveller.returnAge", () => {
+  const testAge = 50;
+  let ageTester;
+  
+  beforeEach(() => {
+    ageTester = new AgeTraveller(testAge);
+  });
+
+  test("returnAge should return a modified number to travelAge", () => {
+    const passedValue = "Mars";
+    const compAge = 26;
+    ageTester.returnAge(passedValue);
+    expect(ageTester.traveledAge).toEqual(26);
+  })
+})
