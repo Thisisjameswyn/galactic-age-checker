@@ -1,5 +1,5 @@
 {
-  "name": "template_wp_eslint_jest",
+  "name": "galactic-age-checker",
   "version": "1.0.0",
   "description": "---",
   "main": "src/main.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Usarneme/template_wp_eslint_jest"
+    "url": "git+https://github.com/Thisisjameswyn/galactic-age-checker"
   },
-  "author": "Usarneme",
-  "license": "ISC",
+  "author": "Thisisjameswyn",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Usarneme/template_wp_eslint_jest/issues"
+    "url": "https://github.com/Thisisjameswyn/galactic-age-checker/issues"
   },
-  "homepage": "https://github.com/Usarneme/template_wp_eslint_jest#readme",
+  "homepage": "https://github.com/Thisisjameswyn/galactic-age-checker#readme",
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",

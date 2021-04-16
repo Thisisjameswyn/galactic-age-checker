@@ -4,3 +4,8 @@ export default class AgeTraveller {
     this.averageAge = 80;
   }
 }
+
+
+//take in user input for age and pass to object constructor
+//build object using passed in age and store average age plus a yet to be reassigned var for modifiedAge
+//

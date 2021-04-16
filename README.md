@@ -1,50 +1,61 @@
-# PROJECT NAME
-## By Usarneme/Tom
+## James Wyn
 
----
+# Galactic Age Checker
 
-### Project Description
 
-This project is a web application that DESCRIPTION
----
-### Tech Stack
-1. HTML5+CSS3
-2. JavaScript/ES2018+
-3. jQuery
-4. Bootstrap
-5. webpack/webpack-cli/webpack dev server
-6. eslint
-7. babel transpiler
-8. Jest testing
----
+### Description
+This is my fifth week project for Epicodus.  The objective is to take a given age and return the comparrison age for Mercury, Venus, Mars and Jupiter. This also returns the years the user would have left to live based on average life expectancy.
 
-### Project Build Available At:
+### Technologies Used
+* Bootstrap
+* JavaScript
+* jQuery
+* JSON
+* HTML
+* CSS
+* MD
 
-[BUILD URL](BUILD URL)
+## Setup/Installation Requirements
 
----
-### Installation Instructions
-1. Clone this repo: `git clone https://github.com/Usarneme/REPO URL`
-2. Enter new directory `cd REPO DIR`
-3. Install dependencies with `npm install`
-4. To run it locally, use the npm dev command `npm run start:dev`
-5. Open your web browser and navigate to http://localhost:9001
-6. For a production build, use `npm run build`
----
-### Known Issues:
-1. NO KNOWN ISSUES
-2. Please open a pull request if you have any issues!
----
-### Test Suite/Specification
+### Without Github template clone:
+* Clone Repo
+* Delete .git if needing a clean commit history
+* Initilize git
+* Add remote repository to new git
+* Make first commit only adding .gitignore to commit
+* Open new repo to begin npm initilization
 
-> See also [the Jest Test File](TESTSURL) for Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
+### With Github
+* Press use this template
+* Create new repo
+* Clone new repo down to
+* Open new repo to begin npm initilization
 
-```
-Describe: TESTS
+### Npm Initilization
+* Verify package.json has correct npm packages for needs
+* Modify title on line 18 of webpack.config.js
+* Modify title on line 2 of package.json
+* Modify description on line 19 of package.json
+* Modify title on line 2 if package-lock.json
+* Run ```npm init -y```
+* Run ```npm install```
+* Verify install works by running ```npm run test``` and ```npm run build```
 
-```
----
-### License is GPLv3 and I make no claim to copyright.
+* * *
+
+## Link where to find my GitHub link
+
+*https://github.com/Thisisjameswyn/GalacticAge
+
+
+### Specs
+
+
+
+## License
+[MIT License](https://opensource.org/licenses/MIT)
+&copy; James Wyn 2021
+
 <br />
 
 > You can't steal what is freely given. Enjoy!
