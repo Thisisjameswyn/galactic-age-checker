@@ -3,4 +3,14 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/styles.css'
 
-$("section").text("TEST TEXT INPUT")
+$(document).ready(function () {
+  let _destination = []
+  $(document).click(function(event) {
+    _destination = [$(event.target).text(), $(event.target).val()];
+  });
+
+  $("#travelLog").submit(function (e) {
+
+    e.preventDefault();
+  });
+});
