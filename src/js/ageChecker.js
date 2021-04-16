@@ -2,6 +2,7 @@ export default class AgeTraveller {
   constructor(age) {
     this.age = age;
     this.averageAge = 80;
+    this.traveledAge = age;
   }
 }
 
