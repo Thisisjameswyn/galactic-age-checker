@@ -1,6 +1,6 @@
-import AgeTraveller from '../src/js/ageChecker';
+import AgeTraveller from "../src/js/ageChecker";
 
-describe('AgeTraveller',() => {
+describe(AgeTraveller,() => {
 
   const testAge = 50;
   let ageTester;
@@ -9,11 +9,15 @@ describe('AgeTraveller',() => {
     ageTester = new AgeTraveller(testAge);
   });
 
-  test('AgeTraveller should exist', () => {
+  test("AgeTraveller should exist", () => {
     expect(ageTester).toBeDefined();
   })
 
-  test('AgeTraveller should store an entered age value', () => {
+  test("AgeTraveller should store an entered age value", () => {
     expect(ageTester.age).toEqual(testAge)
+  })
+
+  test("AgeTraveller should store an average age value", () => {
+    expect(ageTester.averageAge).toEqual(80)
   })
 });
