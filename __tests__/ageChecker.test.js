@@ -47,4 +47,11 @@ describe("AgeTraveller.returnAge", () => {
     ageTester.returnAge(passedValue);
     expect(ageTester.traveledAge).toEqual(compAge);
   })
+
+  test("returnAge should return a modified number to travelAge for Venus", () => {
+    const passedValue = "Venus";
+    const compAge = 80;
+    ageTester.returnAge(passedValue);
+    expect(ageTester.traveledAge).toEqual(compAge);
+  })
 })
