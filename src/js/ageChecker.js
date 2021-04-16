@@ -4,8 +4,11 @@ export default class AgeTraveller {
     this.averageAge = 80;
     this.traveledAge = age;
   }
-  returnAge() {
-    
+  returnAge(destination) {
+    this.traveledAge = this.age;
+    if(destination === "Mars") {
+      this.traveledAge = Math.trunc(this.traveledAge/1.88);
+    }
   }
 }
 

@@ -38,6 +38,6 @@ describe("AgeTraveller.returnAge", () => {
     const passedValue = "Mars";
     const compAge = 26;
     ageTester.returnAge(passedValue);
-    expect(ageTester.traveledAge).toEqual(26);
+    expect(ageTester.traveledAge).toEqual(compAge);
   })
 })
