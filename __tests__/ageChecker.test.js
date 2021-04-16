@@ -34,9 +34,16 @@ describe("AgeTraveller.returnAge", () => {
     ageTester = new AgeTraveller(testAge);
   });
 
-  test("returnAge should return a modified number to travelAge", () => {
+  test("returnAge should return a modified number to travelAge for Mars", () => {
     const passedValue = "Mars";
     const compAge = 26;
+    ageTester.returnAge(passedValue);
+    expect(ageTester.traveledAge).toEqual(compAge);
+  })
+
+  test("returnAge should return a modified number to travelAge for Mercury", () => {
+    const passedValue = "Mercury";
+    const compAge = 208;
     ageTester.returnAge(passedValue);
     expect(ageTester.traveledAge).toEqual(compAge);
   })
