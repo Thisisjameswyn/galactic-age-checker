@@ -4,20 +4,27 @@
   <title>Galactic Traveller</title>
 </head>
 <body>
-  <div>Sol</div>
-  <div>Mercury</div>
-  <div>Venus</div>
-  <div>Earth</div>
-  <div>Mars</div>
-  <div>Jupiter</div>
-  <div>Sent</div>
-  <div>Uranus</div>
-  <div>Neptune</div>
-  <div>Puto</div>
-  <div>Klepper Belt</div>
-  <div>Ord Cluster</div>
-  <div>Local Cluster</div>
-  <div></div>
-  <div></div>
+  <div class="container">
+    <div id="destinations">
+      <label data-year="0">Sol</label><br>
+      <label data-year="0.24">Mercury</label><br>
+      <label data-year="0.62">Venus</label><br>
+      <label data-year="1">Earth</label><br>
+      <label data-year="1.88">Mars</label><br>
+      <label data-year="11.86">Jupiter</label><br>
+      <label data-year="29.46">Saturn</label><br>
+      <label data-year="84.01">Uranus</label><br>
+      <label data-year="164.79">Neptune</label><br>
+      <label data-year="248.59">Pluto</label><br>
+      <label data-year="0">Klepper Belt</label><br>
+      <label data-year="0">Ord Cluster</label><br>
+    </div>
+    <form id="travelLog">
+      <label for="userInput">Enter your age :</label>
+      <input type="text" class="form-control" id="userAge">
+      <button type="submit" class="btn btn-success">Let's Boogie</button>
+      <div id="printout"></div>
+    </form>
+  </div>
 </body>
 </html>

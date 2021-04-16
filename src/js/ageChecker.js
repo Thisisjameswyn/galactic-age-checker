@@ -7,6 +7,5 @@ export default class AgeTraveller {
   returnAge(destination) {
     this.traveledAge = this.age;
     this.traveledAge = Math.trunc(this.traveledAge/destination[1]);
-    
   }
 }
