@@ -53,7 +53,7 @@ This is my fifth week project for Epicodus.  The objective is to take a given ag
 
 ## Link where to find my GitHub link
 
-*https://github.com/Thisisjameswyn/GalacticAge
+*https://github.com/Thisisjameswyn/galactic-age-checker
 
 
 ### Specs
