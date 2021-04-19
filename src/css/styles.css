@@ -37,11 +37,13 @@ body{
 }
 
 #printout{
+  display:none;
   position: fixed;
   margin:auto;
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
   background-color: teal;
+  padding: 20px;
 }
 

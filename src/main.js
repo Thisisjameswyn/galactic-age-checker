@@ -28,6 +28,7 @@ $(document).ready(function () {
 
     $("#printout").text(`${byeBye[returnRandom(byeBye)]}!  Looks like you're headed to ${_destination[0]}
     and you'll be a local age of ${myTravel.traveledAge}.  That gives you ${timeLeftText}`)
+    $("#printout").toggle();
     event.preventDefault()
   });
 });
