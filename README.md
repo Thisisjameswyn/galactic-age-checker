@@ -15,34 +15,8 @@ This is my fifth week project for Epicodus.  The objective is to take a given ag
 * CSS
 * MD
 
-## Setup/Installation Requirements
-
-### Without Github template clone:
-* Clone Repo
-* Delete .git if needing a clean commit history
-* Initilize git
-* Add remote repository to new git
-* Make first commit only adding .gitignore to commit
-* Open new repo to begin npm initilization
-
-### With Github
-* Press use this template
-* Create new repo
-* Clone new repo down to
-* Open new repo to begin npm initilization
-
-### Npm Initilization
-* Verify package.json has correct npm packages for needs
-* Modify title on line 18 of webpack.config.js
-* Modify title on line 2 of package.json
-* Modify description on line 19 of package.json
-* Modify title on line 2 if package-lock.json
-* Run ```npm init -y```
-* Run ```npm install```
-* Verify install works by running ```npm run test``` and ```npm run build```
-
 ### Installation Instructions
-1. Clone this repo: `git clone https://github.com/Usarneme/REPO URL`
+1. Clone this repo: `git clone https://github.com/Thisisjameswyn/REPO URL`
 2. Enter new directory `cd REPO DIR`
 3. Install dependencies with `npm install`
 4. To run it locally, use the npm dev command `npm run start:dev`
@@ -58,40 +32,38 @@ This is my fifth week project for Epicodus.  The objective is to take a given ag
 
 ### Specs
 
-    describe("AgeTraveller",() => {
+  describe("AgeTraveller")
 
-      test("AgeTraveller should exist", () => {
-        expect(ageTester).toBeDefined();
-      })
+  test("AgeTraveller should exist", () => {
+  expect(ageTester).toBeDefined();
+  })
 
-      test("AgeTraveller should store an entered age value", () => {
-        expect(ageTester.age).toEqual(testAge);
-      })
+  test("AgeTraveller should store an entered age value", () => {
+  expect(ageTester.age).toEqual(testAge);
+  })
 
-      test("AgeTraveller should store an average age value", () => {
-        expect(ageTester.averageAge).toEqual(80);
-      })
+  test("AgeTraveller should store an average age value", () => {
+  expect(ageTester.averageAge).toEqual(80);
+  })
 
-      test("AgeTraveller should store a return value for traveledAge", () => {
-        expect(ageTester.traveledAge).toBeDefined();
-      })
-    });
+  test("AgeTraveller should store a return value for traveledAge", () => {
+  expect(ageTester.traveledAge).toBeDefined();
+  })
 
-    describe("AgeTraveller.returnAge", () => {
-      const testAge = 50;
-      const compAge = 26;
-      const destinationArray = ["Mars", 1.88]
-      let ageTester;
-      
-      beforeEach(() => {
-        ageTester = new AgeTraveller(testAge);
-      });
 
-      test("returnAge should modify traveledAge based on destination values", () => {
-        ageTester.returnAge(destinationArray)
-        expect(ageTester.traveledAge).toEqual(compAge);
-      })
-    })
+  describe("AgeTraveller.returnAge")
+
+  test("returnAge should modify traveledAge based on destination values", () => {
+  const destinationArray = ["Mars", 1.88]
+  ageTester.returnAge(destinationArray)
+  expect(ageTester.traveledAge).toEqual(compAge);
+  })
+
+  test("returnAge should remain unmodified if Sun is selected", () => {
+  const destinationArray = ["Sun", 0.0]
+  ageTester.returnAge(destinationArray)
+  expect(ageTester.traveledAge).toEqual(testAge);
+  })
 
 
 ## License
