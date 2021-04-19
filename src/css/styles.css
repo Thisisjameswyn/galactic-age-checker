@@ -1,9 +1,9 @@
-/* #travelLog {
+#travelLog {
   width: 30%;
-} */
+}
 
 .planetsContainer {
-  width: 50%;
+  width: 100%;
   background-image: url("../img/space-background.en.png");
   background-repeat: repeat;
   background-color: #21213d;
@@ -13,7 +13,8 @@
 }
 
 .planetHolder img {
-  max-width: 50%;
+  max-width: 100%;
+  cursor: pointer;
 }
 
 .planetDescription {
@@ -28,5 +29,19 @@
 
 .content img, #game img, #lightbox-container-image {
   padding: 10px;
+}
+
+body{
+  background-color: rgb(24, 21, 43);
+  color: whitesmoke;
+}
+
+#printout{
+  position: fixed;
+  margin:auto;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: teal;
 }
 

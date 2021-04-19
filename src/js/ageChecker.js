@@ -6,6 +6,11 @@ export default class AgeTraveller {
   }
   returnAge(destination) {
     this.traveledAge = this.age;
-    this.traveledAge = Math.trunc(this.traveledAge/destination[1]);
+
+    if(destination[1] === 0) {
+      return
+    } else {
+      this.traveledAge = Math.trunc(this.traveledAge/destination[1]);
+    }
   }
 }

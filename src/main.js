@@ -9,23 +9,25 @@ function returnRandom(array) {
 }
 
 $(document).ready(function () {
-  let _destination = []
-  let myTravel;
-  $("#travelLog").submit(function (event) {
+  $(".planetHolder").click(function(event) {
     const enteredAge = parseInt($("#userAge").val());
-    myTravel = new AgeTraveller(enteredAge);
+    let _destination = [$(event.target).data().text, $(event.target).data().year];
+    let myTravel = new AgeTraveller(enteredAge);
     myTravel.returnAge(_destination)
+
+    let timeLeft = myTravel.averageAge - myTravel.traveledAge;
+    let timeLeftText = ""
+    if(timeLeft <= 0) {
+      timeLeft = 0;
+      timeLeftText = "no time to explore, better hurry back!"
+    } else {
+      timeLeftText = `about ${timeLeft} years to explore, have fun!`
+    }
 
     const byeBye = ["Godspeed","Bye-bye","Tsetchem leshalom","Adieu","Adios","Farewell","Gluckliche Reise","Auf Wiedersehen","Happy landing","Pleasant journey","Cheerio"]
 
     $("#printout").text(`${byeBye[returnRandom(byeBye)]}!  Looks like you're headed to ${_destination[0]}
-    and you'll be a local age of ${myTravel.traveledAge}.  That gives you about ${myTravel.averageAge - myTravel.traveledAge} years to explore`)
-
-    event.preventDefault();
-  });
-
-  $("#destinations").click(function(event) {
-    _destination = [$(event.target).text(), $(event.target).data().year];
+    and you'll be a local age of ${myTravel.traveledAge}.  That gives you ${timeLeftText}`)
     event.preventDefault()
   });
 });

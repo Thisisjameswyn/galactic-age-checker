@@ -5,33 +5,19 @@
 </head>
 <body>
   <div class="container">
-    <div id="destinations">
-      <label data-year="0">Sol</label><br>
-      <label data-year="0.24">Mercury</label><br>
-      <label data-year="0.62">Venus</label><br>
-      <label data-year="1">Earth</label><br>
-      <label data-year="1.88">Mars</label><br>
-      <label data-year="11.86">Jupiter</label><br>
-      <label data-year="29.46">Saturn</label><br>
-      <label data-year="84.01">Uranus</label><br>
-      <label data-year="164.79">Neptune</label><br>
-      <label data-year="248.59">Pluto</label><br>
-      <label data-year="0">Klepper Belt</label><br>
-      <label data-year="0">Ord Cluster</label><br>
-    </div>
+    <h3>Welcome to the solar age checker, please enter your age and click on a destination planet</h3>
     <form id="travelLog">
       <label for="userInput">Enter your age :</label>
       <input type="text" class="form-control" id="userAge">
-      <button type="submit" class="btn btn-success">Let's Boogie</button>
-      <div id="printout"></div>
     </form>
     <div class="planetsContainer">
+      <div id="printout"></div>
       <div class="planetHolder" style="padding-top:0 !important;">
-        <img style="padding-top:0;" src="../src/img/Sun.png">
+        <img data-year="0" data-text="Sun" style="padding-top:0;" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Sun.en.png">
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-mercury/en/"><img src="../src/img/Mercury.en.png"></a>
+        <img data-year="0.24" data-text="Mercury" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Mercury.en.png"></a>
       </div>
       
       <div class="planetText" style="opacity: 1;">
@@ -40,7 +26,7 @@
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-venus/en/"><img src="../src/img/Venus.en.png"></a>
+        <img data-year="0.62" data-text="Venus" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Venus.en.png"></a>
       </div>
       
       <div class="planetText" style="opacity: 1;">
@@ -49,7 +35,7 @@
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-earth/en/"><img src="../src/img/Earth.en.png"></a>
+        <img data-year="1" data-text="Earth" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Earth.en.png"></a>
       </div>
       
       <div class="planetText">
@@ -58,7 +44,7 @@
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-mars/en/"><img src="../src/img/Mars.en.png"></a>
+        <img data-year="1.88" data-text="Mars" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Mars.en.png"></a>
       </div>
       
       <div class="planetText">
@@ -67,7 +53,7 @@
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-jupiter/en/"><img src="../src/img/Jupiter.en.png"></a>
+        <img data-year="11.86" data-text="Jupiter" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Jupiter.en.png"></a>
       </div>
       
       <div class="planetText">
@@ -76,7 +62,7 @@
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-saturn/en/"><img src="../src/img/Saturn.en.png"></a>
+        <img data-year="29.46" data-text="Saturn" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Saturn.en.png"></a>
       </div>
       
       <div class="planetText">
@@ -85,7 +71,7 @@
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-saturn/en/"><img src="../src/img/Uranus.en.png"></a>
+        <img data-year="84.01" data-text="Uranus" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Uranus.en.png"></a>
       </div>
       
       <div class="planetText">
@@ -94,7 +80,7 @@
       </div>
       
       <div class="planetHolder">
-        <a href="https://spaceplace.nasa.gov/all-about-neptune/en/"><img src="../src/img/Neptune.en.png"></a>
+        <img data-year="164.79" data-text="Neptune" src="https://spaceplace.nasa.gov/review/years-on-other-planets/Neptune.en.png"></a>
       </div>
       
       <div class="planetText">
