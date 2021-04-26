@@ -54,4 +54,18 @@ describe("AgeTraveller.returnAge", () => {
     ageTester.returnAge(destinationArray)
     expect(ageTester.traveledAge).toEqual(testAge);
   })
+
+  test("returnAge should modify timeLeft to reflect acurate time remaining", () => {
+    const destinationArray = ["Mars", 1.88]
+    let compTimeLeft = 54;
+    ageTester.returnAge(destinationArray)
+    expect(ageTester.timeLeft).toEqual(compTimeLeft);
+  })
+
+  test("returnAge should modify agePast to reflect acurate years lived past the average age", () => {
+    const destinationArray = ["Mercury", 0.24]
+    let compAgePast = 128;
+    ageTester.returnAge(destinationArray)
+    expect(ageTester.agePast).toEqual(compAgePast);
+  })
 })
