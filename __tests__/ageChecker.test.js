@@ -30,7 +30,7 @@ describe("AgeTraveller",() => {
   })
 
   test("AgeTraveller should store a value for years lived past the average age", () => {
-    expect(ageTester.agePast).toEqual();
+    expect(ageTester.agePast).toBeDefined();
   })
 });
 
