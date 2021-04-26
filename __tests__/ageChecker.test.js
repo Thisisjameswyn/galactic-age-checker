@@ -24,6 +24,14 @@ describe("AgeTraveller",() => {
   test("AgeTraveller should store a return value for traveledAge", () => {
     expect(ageTester.traveledAge).toBeDefined();
   })
+
+  test("AgeTraveller should store a value for timeleft", () => {
+    expect(ageTester.timeLeft).toBeDefined();
+  })
+
+  test("AgeTraveller should store a value for years lived past the average age", () => {
+    expect(ageTester.agePast).toEqual();
+  })
 });
 
 describe("AgeTraveller.returnAge", () => {

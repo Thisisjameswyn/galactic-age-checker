@@ -38,12 +38,15 @@ body{
 
 #printout{
   display:none;
+  width: 80vw;
   position: fixed;
-  margin:auto;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border: 1px solid rgba(133, 0, 133, 0.842);
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
-  background-color: teal;
+  background-color: rgba(71, 5, 71, 0.842);
   padding: 20px;
 }
 
