@@ -53,6 +53,14 @@ This is my fifth week project for Epicodus.  The objective is to take a given ag
   expect(ageTester.traveledAge).toBeDefined();
   })
 
+  test("AgeTraveller should store a value for timeleft", () => {
+  expect(ageTester.timeLeft).toBeDefined();
+  })
+
+  test("AgeTraveller should store a value for years lived past the average age", () => {
+  expect(ageTester.agePast).toBeDefined();
+  })
+
 
   describe("AgeTraveller.returnAge")
 
